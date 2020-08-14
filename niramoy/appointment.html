@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- <title>Responsive Navigation Bar - W3jar.Com</title> -->
+      <title>Home</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="../niramoy/font/font.css">
+      <link rel="stylesheet" href="../niramoy/css/bootstrap.css">
+      <link rel="stylesheet" href="../niramoy/css/tempusdominus-bootstrap-4.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script>
+   </head>
+   <body>
+      <!-- =========navbar start==========   -->
+      <div class="nav_div">
+         <nav class="navbar  navbar-expand-lg navbar-dark  navbar_theme_color navbar-default navbar-static-top">
+            <img src="../niramoy/image/logo.png" width="35px" height="35px"  alt="Niramoy">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="../niramoy/homepage.html">Prescription  <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="../niramoy/user.html" class="nav-link">User Profile</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
+                    </li>
+                    <li class="nav-item dropdown ml-auto active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <!-- =========navbar end========== -->
+      <div class="container-fluid  edit_top_body">
+         <div class="card col-12 ml-auto mr-auto div2">
+            <section>
+               <div class="card-header rounded-top1 div2_bcolor">
+                  <div class="row">
+                     <div class="col-4">
+                        <button class="btn btn-primary btn-sm edit_margin3" type="button" data-toggle="modal" data-target="#schedule"><i class="fa fa-plus-circle edit_color3"></i> Create Schedule
+                        </button>
+                     </div>
+                     <div class="col-4 text-center">
+                        <p class="prescription">Prescription</p>
+                     </div>
+                     <div class="col-4 text-right">
+                        <div class="dropdown">
+                           <button type="button" class="btn btn-sm btn-new dropdown-toggle" data-toggle="dropdown">
+                           Select Prescription Template
+                           </button>
+                           <div class="dropdown-menu w47">
+                              <a class="dropdown-item" href="#">Fever</a>
+                              <a class="dropdown-item" href="#">Dengue</a>
+                              <a class="dropdown-item" href="#">Fever</a>
+                              <a class="dropdown-item" href="#">Dengue</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="main-list">
+               <div class="row card-body">
+                  <div class="container py-5">
+                     <!-- For Demo Purpose -->
+                     <!-- Calendar -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Button trigger modal -->
+         <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#schedule">
+            Add schedule
+            </button>
+            -->
+         <div class="modal fade modal-tall modal_schedule" id="schedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal_max_width_appointment" role="document">
+               <div  class="modal-content modal_content_schedule">
+                  <div class="modal-header modal_header_schedule">
+                     <h5 class="modal-title" id="exampleModalScrollableTitle">Schedule configure</h5>
+                     <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal_body_padding_bottom row modal-body scroll_schedule_days_board scroll_details">
+                     <form class="col-12">
+                        <div class="form-row">
+                           <div class="form-group col-12">
+                              <label  for="inputEmail4">Schedule name</label>
+                              <div class="input-group">
+                                 <input type="text" class="form-control margin_right_sc_name" aria-label="Text input with dropdown button">
+                                 <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Open</button>
+                                    <div class="dropdown-menu">
+                                       <a class="dropdown-item" href="#">Previous Schedule</a>
+                                       <a class="dropdown-item" href="#">Previous Schedule</a>
+                                       <a class="dropdown-item" href="#">Previous Schedule</a>
+                                       <a class="dropdown-item" href="#">Previous Schedule</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-12">
+                              <label  for="inputEmail4">Location</label>
+                              <div class="row pl-3 pr-3">
+                                 <input class="form-control col-12" placeholder="Enter schedule name">
+                                 <div class="btn-group col-2">
+                                    <!-- Location add and save it in this list then  -->
+                                    <!-- <span >
+                                       <ul class="schedule_location_suggestion scroll_search_list_advice scroll_details"   >
+                                           <li class="per_list1" >
+                                       
+                                               <label  >Choose location</label>
+                                           </li>
+                                         
+                                          <li class="per_list1">
+                                         
+                                             <label  >Choose location</label>
+                                         </li>
+                                        
+                                       <li class="per_list1">
+                                       
+                                          <label  >Choose location</label>
+                                       </li>
+                                       
+                                          </ul>
+                                         </span> -->
+                                    <button class="btn btn-secondary add_btn">Add</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Consultency start time:</label>
+                                 <!-- <label for="doj">Date of Journey</label>
+                                    <input type="text" class="datepicker form-control hasDatepicker" id="doj" name="doj" data-date-format="dd/mm/yyyy" placeholder="Pick a date" value="" readonly="true"><img class="ui-datepicker-trigger" src="/img/calendar.png" alt="..." title="..."> -->
+                                 <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                    <input type="text" placeholder="Pick a Date" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                                    <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Consultency End time:</label>
+                                 <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                                    <input type="text" placeholder="Pick a Date" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                                    <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Break start time:</label>
+                                 <div class="input-group date" id="datetimepicker0" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker0"/>
+                                    <div class="input-group-append" data-target="#datetimepicker0" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Break end time:</label>
+                                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-12">
+                              <label  for="inputEmail4">Repeat weekly in following days:</label>
+                              <div class="repeat_label">
+                                 <div class="day_selector">
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Sat</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Sun</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Mon</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Tues</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Wed</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Thurs</font></span>
+                                    </label>
+                                    <label class="checkbox_day_select">
+                                    <input type="checkbox" />
+                                    <span title="Title here"><font class="check_days ">Fri</font></span>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- validity start -->
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Validity start date:</label>
+                                 <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <label  for="inputEmail4">Validity end date:</label>
+                                 <div class="input-group date" id="datetimepicker5" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker5"/>
+                                    <div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
+                                       <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-12">
+                              <!-- <label  for="inputEmail4">Duration</label> -->
+                              <div class="row pl-3 pr-3">
+                                 <label class="my-auto">Per patient consultency time &nbsp; &nbsp; </label> <input class="form-control col-3" type="number" placeholder="Ex. 20 minute"> <label class="my-auto">&nbsp; &nbsp;min</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-12">
+                              <!-- <label  for="inputEmail4">Holiday schedule</label> -->
+                              <div class="row pl-3 pr-3 holiday_info">
+                                 <span onclick="myFunction()" class="my-auto "> <a href="#">Configure holidays.</a> </span>
+                              </div>
+                           </div>
+                           <div id="myDIV" class="task__detail">
+                              <button type="button" class="btn btn-primary btn-sm btn_width_holiday btn_save_theme" data-toggle="modal" data-target="#add_holiday">Add</button> 
+                              <button type="button" data-toggle="modal" data-target="#delete_holiday" class="btn btn-outline-secondary btn-sm btn_width_holiday">Delete</button>
+                              <button type="button" data-toggle="modal" data-target="#modify_holiday" class="btn btn-outline-secondary btn-sm btn_width_holiday">Modify</button>
+                           </div>
+                           <!-- -----------------------------------------add holiday -->
+                           <div class="modal fade" id="add_holiday" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered " role="document">
+                                 <div class="modal-content extra_border">
+                                    <!-- <div class="modal-header">
+                                       <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span>
+                                       </button>
+                                       </div> -->
+                                    <div class="modal-body add_holiday_form ">
+                     <form >
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">Add holiday name:</label>
+                     <input type="text" class="form-control" id="recipient-name">
+                     </div>
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">Start date</label>
+                     <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
+                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6"/>
+                     <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
+                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">End date</label>
+                     <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7"/>
+                     <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
+                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="form-group">
+                     <label for="message-text" class="col-form-label">Description:</label>
+                     <textarea class="form-control" id="message-text"></textarea>
+                     </div>
+                     </form>
+                     <div class="modal-footer footer_btn">
+                     <button type="button" class="btn btn-outline-secondary btn-sm btn_width_holiday">Cancel</button>
+                     <button type="button" class="btn btn-primary btn-sm btn_width_holiday btn_save_theme" >Save</button> 
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <!-- -----------------------------------------Delete holiday -->
+                     <div class="modal fade" id="delete_holiday" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered " role="document">
+                     <div class="modal-content extra_border">
+                     <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Holiday</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div> -->
+                     <div class="modal-body add_holiday_form ">
+                     <form >
+                     <div class="form-group">
+                     <label for="sel1">Choose a holiday to modify</label>
+                     <select class="form-control" id="sel1">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     </select>
+                     </div>
+                     </form>
+                     <div class="modal-footer footer_btn">
+                     <button type="button"  data-target="#" class="btn btn-outline-secondary btn-sm btn_width_holiday">Cancel</button>
+                     <button type="button" class="btn btn-primary btn-sm btn_width_holiday btn_save_theme" data-toggle="modal" data-target="#">Confirm Delete</button> 
+                     </div>
+                     </div>
+                     <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                        </div> -->
+                     </div>
+                     </div>
+                     </div>
+                     <!-- -----------------------------------------Modify holiday  -->
+                     <div class="modal fade" id="modify_holiday" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered " role="document">
+                     <div class="modal-content extra_border">
+                     <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Holiday</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div> -->
+                     <div class="modal-body add_holiday_form ">
+                     <form >
+                     <div class="form-group">
+                     <label for="sel1">Choose a holiday to modify:</label>
+                     <select class="form-control" id="sel1">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     </select>
+                     </div>
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">Holiday name:</label>
+                     <input type="text" class="form-control" id="recipient-name">
+                     </div>
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">Start date</label>
+                     <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
+                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
+                     <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
+                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="form-group">
+                     <label for="recipient-name" class="col-form-label">End date</label>
+                     <div class="input-group date" id="datetimepicker9" data-target-input="nearest">
+                     <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker9"/>
+                     <div class="input-group-append" data-target="#datetimepicker9" data-toggle="datetimepicker">
+                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="form-group">
+                     <label for="message-text" class="col-form-label">Description:</label>
+                     <textarea class="form-control" id="message-text"></textarea>
+                     </div>
+                     </form>
+                     <div class="modal-footer footer_btn">
+                     <button type="button"  data-target="#" class="btn btn-outline-secondary btn-sm btn_width_holiday">Cancel</button>
+                     <button type="button" class="btn btn-primary btn-sm btn_width_holiday btn_save_theme" data-toggle="modal" data-target="#">Save</button> 
+                     </div>
+                     </div>
+                     <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                        </div> -->
+                     </div>
+                     </div>
+                     </div>
+                     </div>
+                     <!-- <section onclick="myFunction()" class="task task--primary">
+                        </section> -->
+                     </form>
+                  </div>
+                  <div class="modal-footer footer_btn create_footer">
+                     <button type="button"  data-target="#" data-dismiss="modal" class="btn btn-outline-secondary btn-sm btn_width_crt_sch_footer">Cancel</button>
+                     <button type="button" class="btn btn-primary btn-sm btn_width_crt_sch_footer btn_save_theme"  data-target="#add_holiday">Save</button> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- ================= container fluid end========================= -->
+      <script>
+         $(".dropdown-menu li a").click(function(){
+         var selText = $(this).text();
+         $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+         });
+         $(function () {
+             $('#datetimepicker0').datetimepicker({
+                 format: 'LT'
+             });
+         });
+         $(function () {
+             $('#datetimepicker1').datetimepicker({
+                 format: 'LT'
+             });
+         });
+         $(function () {
+             $('#datetimepicker2').datetimepicker({
+                 format: 'LT'
+             });
+         });
+         $(function () {
+             $('#datetimepicker3').datetimepicker({
+                 format: 'LT'
+             });
+         });
+         $(function () {
+         $('#datetimepicker4').datetimepicker({
+            format: 'DD MMMM,YYYY'
+         });
+         });
+         $(function () {
+               $('#datetimepicker5').datetimepicker({
+                  format: 'DD MMMM,YYYY'
+               });
+         });
+         $(function () {
+               $('#datetimepicker6').datetimepicker({
+                  format: 'DD MMMM,YYYY'
+               });
+         });
+         $(function () {
+               $('#datetimepicker7').datetimepicker({
+                  format: 'DD MMMM,YYYY'
+               });
+         });
+         $(function () {
+               $('#datetimepicker8').datetimepicker({
+                  format: 'DD MMMM,YYYY'
+               });
+         });
+         $(function () {
+               $('#datetimepicker9').datetimepicker({
+                  format: 'DD MMMM,YYYY'
+               });
+         });
+         
+         function myFunction() {
+                          var x = document.getElementById("myDIV");
+                          if (x.style.display === "none") {
+                            x.style.display = "block";
+                          } else {
+                            x.style.display = "none";
+                          }
+                        }
+                        
+      </script>
+   </body>
+</html>
